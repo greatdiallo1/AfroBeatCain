@@ -35,3 +35,4 @@ accordion_head.on('click', function(event) {
 /* accordion_head.on('click', function(event) {
     $(this).parent().next().stop(true,true).slideToggle('normal');
 }); */
+
