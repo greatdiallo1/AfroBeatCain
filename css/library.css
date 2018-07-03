@@ -66,3 +66,13 @@
     display: none;
     background-color: rgb(27, 27, 27);
 }
+
+
+/*                                       */
+
+
+.playlist {
+    margin-top: 16.1vh;
+    margin-bottom: 10vh;
+    display: none;
+}
