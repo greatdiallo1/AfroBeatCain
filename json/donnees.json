@@ -1,0 +1,66 @@
+[
+    {
+        "pseudo":"Pseudo1",
+        "login":"login1",
+        "mdp":"login1",
+        "img":"img/profil1.jpg",
+        "back":"img/back1.jpg",
+        "beats":[
+            {
+                "name" : "beat1",
+                "creator" : "Pseudo1",
+                "time" : "04:21"
+            },
+            {
+                "name" : "beat2",
+                "creator" : "Pseudo1",
+                "time" : "04:10"
+            },
+            {
+                "name" : "beat3",
+                "creator" : "Pseudo1",
+                "time" : "04:01"
+            },
+            {
+                "name" : "beat4",
+                "creator" : "Pseudo1",
+                "time" : "02:43"
+            }
+        ],
+        "favorite_beat":"",
+        "favorite_beatmaker":"",
+        "playlist":""
+    },
+    {
+        "pseudo":"Pseudo2",
+        "login":"login2",
+        "mdp":"login2",
+        "img":"img/profil2.jpg",
+        "back":"img/back2.jpg",
+        "beats":"",
+        "favorite_beat":[
+            {
+                "name" : "beat1",
+                "creator" : "Pseudo1",
+                "time" : "04:21"
+            },
+            {
+                "name" : "beat2",
+                "creator" : "Pseudo1",
+                "time" : "04:10"
+            },
+            {
+                "name" : "beat3",
+                "creator" : "Pseudo1",
+                "time" : "04:01"
+            },
+            {
+                "name" : "beat4",
+                "creator" : "Pseudo1",
+                "time" : "02:43"
+            }
+        ],
+        "favorite_beatmaker":"Pseudo1",
+        "playlist":""
+    }
+]

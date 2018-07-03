@@ -1,0 +1,68 @@
+.demer {
+    top: 7.8vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.pl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lp {
+    font-size: 0.9em;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.tit {
+    height: 12vh;
+    width: 100vw;
+    border-top: 1px solid #ff8800;
+    background-color: rgb(31, 30, 30);
+}
+
+.icone {
+    height: 6vh;
+    margin-left: 2vh;
+    margin-top: 3vh;
+}
+.favorites {
+    margin-top: 16.1vh;
+    margin-bottom: 10vh;
+}
+.song {
+    text-align: center;
+    margin-top: -10vh;
+    color: white;
+}
+.songdesc {
+    text-align: center;
+    margin-top: 2vh;
+    color: white;
+}
+.basket {
+    height: 5vh;
+    left:85vw;
+    margin-top: 1vh;
+    position: absolute;
+    display: none;
+}
+.arrow {
+    height: 5vh;
+    left:85vw;
+    margin-top: 4vh;
+    position: absolute;
+}
+
+.titre {
+    z-index: 5;
+    height: 12vh;
+    width: 100vw;
+    position: absolute;
+}
+.contenu {
+    height: 14vh;
+    display: none;
+    background-color: rgb(27, 27, 27);
+}
