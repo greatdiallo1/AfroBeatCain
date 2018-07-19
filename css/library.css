@@ -20,6 +20,14 @@
     width: 100vw;
     border-top: 1px solid #ff8800;
     background-color: rgb(31, 30, 30);
+    box-shadow: 0px -15px 50px -20px black inset;
+}
+.titi {
+    height: 10vh;
+    width: 100vw;
+    border-top: 1px solid #ff8800;
+    background-color: rgb(31, 30, 30);
+    box-shadow: 0px -15px 50px -20px black inset;
 }
 
 .icone {
@@ -27,19 +35,37 @@
     margin-left: 2vh;
     margin-top: 3vh;
 }
+.icon {
+    height: 6vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
 .favorites {
     margin-top: 16.1vh;
     margin-bottom: 10vh;
 }
 .song {
-    text-align: center;
-    margin-top: -10vh;
+    margin-top: -8.5vh;
+    margin-left: 20vw;
     color: white;
 }
 .songdesc {
+    margin-left: 20vw;
+    margin-top: 2vh;
+    font-size: .8em;
+    color: white;
+}
+.son {
+    text-align: center;
+    margin-top: -10vh;
+    color: white;
+    font-size: .8em;
+}
+.songdes {
     text-align: center;
     margin-top: 2vh;
     color: white;
+    font-size: .6em;
 }
 .basket {
     height: 5vh;
@@ -65,4 +91,30 @@
     height: 14vh;
     display: none;
     background-color: rgb(27, 27, 27);
+}
+.content {
+    height: 49vh;
+    display: none;
+    background-color: rgb(27, 27, 27);
+}
+
+/*                                       */
+
+
+.playlists {
+    margin-top: 16vh;
+    margin-bottom: 10vh;
+    width: 100vw;
+    display: none;
+}
+.beatmaker {
+    margin-top: 16.1vh;
+    margin-bottom: 10vh;
+    width: 100vw;
+    display: none;
+}
+.ico {
+    height: 8vh;
+    margin-left: 1.5vh;
+    margin-top: 1.5vh;
 }
