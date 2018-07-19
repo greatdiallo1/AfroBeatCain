@@ -1,8 +1,78 @@
-body{
+body,html{
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    overflow:hidden; 
 }
-#bg{
+/* section{
+    width: 40vh;
+    border-radius: 50vh; 
+} */
+#play{
+    position: absolute;
+    top: 70vh;
+    left: 26vh;
+    color: rgb(228, 107, 59);
+}
+.playbutton{
+    background-image: url(img/play.svg);
+}
+.changebutton {
+    background-image: url();
+}
+
+#pre{
+    position: absolute;
+   left: 40%;
+   top: 70vh;
+   color: rgb(228, 107, 59);
+}
+
+#image{
+    width: 1000px;
+    margin-left: 13%;
+    margin-top: 20%;
+}
+#next{
+    margin-left: 5px;
+}
+#songTitle{
+    margin-bottom: 8vh;
+    margin-left: 35vw;
+    color: rgb(228, 107, 59);
+}
+#v{
+    position: absolute;
+    left: 77vw;
+    top: 76vh;
+    color: rgb(228, 107, 59);
+}
+
+
+#v1{
+    color: rgb(228, 107, 59);
+    margin-left: 4vh;
+}
+#currenTime{
+    position: absolute;
+    top: 66vh;
+     margin-left: 3vh; 
+     color: gainsboro;
+}
+button{
+    width: 2vw;
+    height: 3vh;
+    ;
+}
+input{
+    border:none;
+    background:#333;
+    color:#FFF;
+    padding:4px 8px;
+    margin:5px;
+    text-align:center;
+}
+/* /* #bg{
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -26,20 +96,20 @@ body{
 }
 #main{
     /* height: 100%; */
-    width: 100%;
+    /* width: 100%;
     background-color: #fff;
     border-radius: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 999;
+    z-index: 999; */
 
-}
+ /* }
 #image img{
     height: 180px;
-    width: 100%;
-    margin-top: -5px;
+    width: 90%;
+    margin-top: 55px;
     border-top-left-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -54,35 +124,34 @@ body{
     font-family: monospace;
     font-size: 18px;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
 
 }
-#buttons{
-    height: 50px;
-    width: 100%;
+ #buttons{
+    height: 60px;
+    width: 500px;
     margin-top: 50px;
     position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%,50%);
-}
-#play{
+    top: 65%;
+    left: 100%;
+    transform: translate(-50%,50%); 
+ }  
+ #play{
  width: 50px;
  height: 50px; 
   border: 0; 
- /* background-color: royalblue;  */
+  background-color: royalblue;  
  border-radius: 50%; 
  outline: none;
  cursor: pointer;
  position: absolute;
  top: 50%;
- /* left: 50%; */
- transform: translate(-50%,-50%); 
- 
-}
-#play img{
+  left: 50%; 
+  transform: translate(-50%,-50%);  
+  
+ #play img{
     position: absolute;
     top: 50%;
     position: absolute;
@@ -90,16 +159,16 @@ body{
    left: 50%;
    transform: translate(-50%,-50%);
 }
-#next{
-    /* height: 30px;
-    width: 30px;
-    left: 70%;  */
+ #pre{
+    height: 40px;
+    width: 60px;
+    left: 70%;   */
    
-}
-#seek-bar{
+/* }  */ 
+ #seek-bar{
     width: 250px;
     height: 5px;
-    background-color: gray;
+    background-color: rgb(224, 207, 207);
     display: flex;
     border-radius: 50px;
     margin-left: 25px;
@@ -107,15 +176,134 @@ body{
 }
 #fill{
     height: 5px;
-    background-color: royalblue;
+    background-color: rgb(165, 77, 26);
     border-radius: 20px;
+
+
 }
-#handle{
+ #handle{
+     position: absolute;
+     top: 86vh;
+     left: 29vw;
     width: 8px;
     height: 8px;
-    background-color: royalblue;
+    background-color: rgb(228, 107, 59);
     border-radius: 50px;
     margin-left: -5px;
-    transform: scale(2);
+    transform: scale(2); 
 }
 
+/* #volume{
+    position: absolute;
+    top: 445px;
+    left: 11vw;
+    width: 0vw;  
+    height: 5px; 
+    background-color: rgb(167, 174, 194);
+    border-radius: 20px;
+}  */
+
+#volumeIcon{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(228, 107, 59);
+    border-radius: 50%;
+}
+#volumeIcon img{
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#decrease,#increase{
+    height: 4vh;
+    width: 6vw;
+    background-color: rgb(228, 107, 59);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-family: fantasy;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    left: 77vw;
+    top: 21.5vh; 
+    cursor: pointer;
+}
+#increase{
+    left: 14vw;
+    top: 21.5vh; 
+}
+
+#lo{
+    position: absolute;
+    top: 71vh;
+    left: 5vw;
+    color: rgb(228, 107, 59);
+
+}
+#eu{
+    position: absolute;
+    top: 71vh;
+    left: 84vw;
+    color: rgb(228, 107, 59);
+}
+#au{
+    position: absolute;
+    top: 86vh;
+    left: 21vw;
+    width: 170px;
+    height: 5px;
+    background-color: rgb(224, 207, 207);
+    display: flex;
+    border-radius: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#back{
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    color: rgb(228, 107, 59);
+}
+
+input[type=range] {
+   -webkit-appearance: none; 
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(228, 107, 59);
+    border-radius: 50px;
+    margin-top: 0px;
+   -webkit-appearance: none; 
+  }
+/*   
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+  } */
+
+  #me{
+    position: absolute;
+    top: 1vh;
+    left: 95vw;
+    color:  rgb(228, 107, 59);
+
+  }
