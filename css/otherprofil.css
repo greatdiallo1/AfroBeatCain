@@ -1,0 +1,26 @@
+.like{
+    border-radius:100px;
+    width: 15vw;
+    height: 15vw;
+    margin: 5vh 3vw;
+    background: url("../img/heart2.svg") no-repeat;
+    background-color: gray; 
+    background-size: 50%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.liked{
+    border-radius:100px;
+    width: 15vw;
+    height: 15vw;
+    margin: 5vh 3vw;
+    background: url("../img/heart2.svg") no-repeat;
+    background-color: red; 
+    background-size: 50%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+} 
+.profilinfo{
+    margin: 3vh 9vw;
+    transition: 0.3s;
+}

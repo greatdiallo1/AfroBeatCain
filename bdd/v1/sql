@@ -1,0 +1,130 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: Beats
+#------------------------------------------------------------
+
+CREATE TABLE Beats(
+        Id_Beat     Int  Auto_increment  NOT NULL ,
+        Titre       Varchar (50) NOT NULL ,
+        Prix        Varchar (50) NOT NULL ,
+        Date        Date NOT NULL ,
+        Description Varchar (150) NOT NULL ,
+        Tag1        Varchar (20) NOT NULL ,
+        Tag2        Varchar (20) NOT NULL ,
+        Tag3        Varchar (20) NOT NULL ,
+        Tag4        Varchar (20) NOT NULL ,
+        Tag5        Varchar (20) NOT NULL ,
+        Dispo       Int NOT NULL
+	,CONSTRAINT Beats_PK PRIMARY KEY (Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: User
+#------------------------------------------------------------
+
+CREATE TABLE User(
+        Id_user         Int  Auto_increment  NOT NULL ,
+        Identifiant_App Varchar (50) NOT NULL ,
+        Mdp             Varchar (50) NOT NULL ,
+        Profil_pic      Varchar (500) NOT NULL ,
+        Pseudo          Varchar (500) NOT NULL ,
+        Premium         Int NOT NULL ,
+        Langue          Varchar (50) NOT NULL ,
+        Mail            Varchar (50) NOT NULL
+	,CONSTRAINT User_PK PRIMARY KEY (Id_user)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Playlist
+#------------------------------------------------------------
+
+CREATE TABLE Playlist(
+        Id_playlist Int  Auto_increment  NOT NULL ,
+        Date_Ajout  Date NOT NULL ,
+        Id_user     Int NOT NULL
+	,CONSTRAINT Playlist_PK PRIMARY KEY (Id_playlist)
+
+	,CONSTRAINT Playlist_User_FK FOREIGN KEY (Id_user) REFERENCES User(Id_user)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Ventes
+#------------------------------------------------------------
+
+CREATE TABLE Ventes(
+        Id_vente       Int  Auto_increment  NOT NULL ,
+        Date           Date NOT NULL ,
+        Moyen_paiement Varchar (50) NOT NULL ,
+        Info_paiement  Varchar (255) NOT NULL ,
+        Id_user        Int NOT NULL ,
+        Id_Beat        Int NOT NULL
+	,CONSTRAINT Ventes_PK PRIMARY KEY (Id_vente)
+
+	,CONSTRAINT Ventes_User_FK FOREIGN KEY (Id_user) REFERENCES User(Id_user)
+	,CONSTRAINT Ventes_Beats0_FK FOREIGN KEY (Id_Beat) REFERENCES Beats(Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Contenir
+#------------------------------------------------------------
+
+CREATE TABLE Contenir(
+        Id_Beat     Int NOT NULL ,
+        Id_playlist Int NOT NULL
+	,CONSTRAINT Contenir_PK PRIMARY KEY (Id_Beat,Id_playlist)
+
+	,CONSTRAINT Contenir_Beats_FK FOREIGN KEY (Id_Beat) REFERENCES Beats(Id_Beat)
+	,CONSTRAINT Contenir_Playlist0_FK FOREIGN KEY (Id_playlist) REFERENCES Playlist(Id_playlist)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Creer
+#------------------------------------------------------------
+
+CREATE TABLE Creer(
+        Id_Beat Int NOT NULL ,
+        Id_user Int NOT NULL
+	,CONSTRAINT Creer_PK PRIMARY KEY (Id_Beat,Id_user)
+
+	,CONSTRAINT Creer_Beats_FK FOREIGN KEY (Id_Beat) REFERENCES Beats(Id_Beat)
+	,CONSTRAINT Creer_User0_FK FOREIGN KEY (Id_user) REFERENCES User(Id_user)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Aimer
+#------------------------------------------------------------
+
+CREATE TABLE Aimer(
+        Id_user Int NOT NULL ,
+        Id_Beat Int NOT NULL
+	,CONSTRAINT Aimer_PK PRIMARY KEY (Id_user,Id_Beat)
+
+	,CONSTRAINT Aimer_User_FK FOREIGN KEY (Id_user) REFERENCES User(Id_user)
+	,CONSTRAINT Aimer_Beats0_FK FOREIGN KEY (Id_Beat) REFERENCES Beats(Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Suivre
+#------------------------------------------------------------
+
+CREATE TABLE Suivre(
+        Id_user        Int NOT NULL ,
+        Id_user_Suivre Int NOT NULL
+	,CONSTRAINT Suivre_PK PRIMARY KEY (Id_user,Id_user_Suivre)
+
+	,CONSTRAINT Suivre_User_FK FOREIGN KEY (Id_user) REFERENCES User(Id_user)
+	,CONSTRAINT Suivre_User0_FK FOREIGN KEY (Id_user_Suivre) REFERENCES User(Id_user)
+)ENGINE=InnoDB;
+
+

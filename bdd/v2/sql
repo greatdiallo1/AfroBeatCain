@@ -1,0 +1,265 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: Tag
+#------------------------------------------------------------
+
+CREATE TABLE Tag(
+        Id_tag Int  Auto_increment  NOT NULL
+	,CONSTRAINT Tag_PK PRIMARY KEY (Id_tag)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Licences
+#------------------------------------------------------------
+
+CREATE TABLE Licences(
+        id_licence          Int  Auto_increment  NOT NULL ,
+        nom_licence         Varchar (50) NOT NULL ,
+        type_licence        Varchar (50) NOT NULL ,
+        prix_licence        Varchar (50) NOT NULL ,
+        Description_licence Varchar (50) NOT NULL
+	,CONSTRAINT Licences_PK PRIMARY KEY (id_licence)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Beats
+#------------------------------------------------------------
+
+CREATE TABLE Beats(
+        Id_Beat     Int  Auto_increment  NOT NULL ,
+        Titre       Varchar (50) NOT NULL ,
+        Prix        Varchar (50) NOT NULL ,
+        Date        Date NOT NULL ,
+        Description Varchar (150) NOT NULL ,
+        Dispo       Int NOT NULL ,
+        id_licence  Int NOT NULL
+	,CONSTRAINT Beats_PK PRIMARY KEY (Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Decrire 
+#------------------------------------------------------------
+
+CREATE TABLE Decrire(
+        Id_tag  Int NOT NULL ,
+        Id_Beat Int NOT NULL
+	,CONSTRAINT Decrire_PK PRIMARY KEY (Id_tag,Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Playlist
+#------------------------------------------------------------
+
+CREATE TABLE Playlist(
+        Id_playlist Int  Auto_increment  NOT NULL ,
+        Date_Ajout  Date NOT NULL ,
+        Id_user     Int NOT NULL
+	,CONSTRAINT Playlist_PK PRIMARY KEY (Id_playlist)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: User
+#------------------------------------------------------------
+
+CREATE TABLE User(
+        Id_user         Int  Auto_increment  NOT NULL ,
+        Identifiant_App Varchar (50) NOT NULL ,
+        Mdp             Varchar (50) NOT NULL ,
+        Profil_pic      Varchar (500) NOT NULL ,
+        Pseudo          Varchar (500) NOT NULL ,
+        Premium         Int NOT NULL ,
+        Langue          Varchar (50) NOT NULL ,
+        Mail            Varchar (50) NOT NULL ,
+        id_info         Int NOT NULL
+	,CONSTRAINT User_PK PRIMARY KEY (Id_user)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Historique_Ventes
+#------------------------------------------------------------
+
+CREATE TABLE Historique_Ventes(
+        Id_vente       Int  Auto_increment  NOT NULL ,
+        Date           Date NOT NULL ,
+        Moyen_paiement Varchar (50) NOT NULL ,
+        Info_paiement  Varchar (255) NOT NULL ,
+        Id_user        Int NOT NULL ,
+        Id_Beat        Int NOT NULL
+	,CONSTRAINT Historique_Ventes_PK PRIMARY KEY (Id_vente)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Information
+#------------------------------------------------------------
+
+CREATE TABLE Information(
+        id_info         Int  Auto_increment  NOT NULL ,
+        Geolocalisation Varchar (200) NOT NULL ,
+        Id_user         Int NOT NULL
+	,CONSTRAINT Information_PK PRIMARY KEY (id_info)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Pub
+#------------------------------------------------------------
+
+CREATE TABLE Pub(
+        id_pub      Int  Auto_increment  NOT NULL ,
+        nom_pub     Varchar (50) NOT NULL ,
+        Fournisseur Varchar (50) NOT NULL ,
+        id_info     Int
+	,CONSTRAINT Pub_PK PRIMARY KEY (id_pub)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Contenir
+#------------------------------------------------------------
+
+CREATE TABLE Contenir(
+        Id_Beat     Int NOT NULL ,
+        Id_playlist Int NOT NULL
+	,CONSTRAINT Contenir_PK PRIMARY KEY (Id_Beat,Id_playlist)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Creer
+#------------------------------------------------------------
+
+CREATE TABLE Creer(
+        Id_Beat Int NOT NULL ,
+        Id_user Int NOT NULL
+	,CONSTRAINT Creer_PK PRIMARY KEY (Id_Beat,Id_user)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Aimer
+#------------------------------------------------------------
+
+CREATE TABLE Aimer(
+        Id_user Int NOT NULL ,
+        Id_Beat Int NOT NULL
+	,CONSTRAINT Aimer_PK PRIMARY KEY (Id_user,Id_Beat)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Suivre
+#------------------------------------------------------------
+
+CREATE TABLE Suivre(
+        Id_user        Int NOT NULL ,
+        Id_user_Suivre Int NOT NULL
+	,CONSTRAINT Suivre_PK PRIMARY KEY (Id_user,Id_user_Suivre)
+)ENGINE=InnoDB;
+
+
+
+
+ALTER TABLE Beats
+	ADD CONSTRAINT Beats_Licences0_FK
+	FOREIGN KEY (id_licence)
+	REFERENCES Licences(id_licence);
+
+ALTER TABLE Decrire
+	ADD CONSTRAINT Decrire_Tag0_FK
+	FOREIGN KEY (Id_tag)
+	REFERENCES Tag(Id_tag);
+
+ALTER TABLE Decrire
+	ADD CONSTRAINT Decrire_Beats1_FK
+	FOREIGN KEY (Id_Beat)
+	REFERENCES Beats(Id_Beat);
+
+ALTER TABLE Playlist
+	ADD CONSTRAINT Playlist_User0_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE User
+	ADD CONSTRAINT User_Information0_FK
+	FOREIGN KEY (id_info)
+	REFERENCES Information(id_info);
+
+ALTER TABLE User 
+	ADD CONSTRAINT User_Information0_AK 
+	UNIQUE (id_info);
+
+ALTER TABLE Historique_Ventes
+	ADD CONSTRAINT Historique_Ventes_User0_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE Historique_Ventes
+	ADD CONSTRAINT Historique_Ventes_Beats1_FK
+	FOREIGN KEY (Id_Beat)
+	REFERENCES Beats(Id_Beat);
+
+ALTER TABLE Information
+	ADD CONSTRAINT Information_User0_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE Information 
+	ADD CONSTRAINT Information_User0_AK 
+	UNIQUE (Id_user);
+
+ALTER TABLE Pub
+	ADD CONSTRAINT Pub_Information0_FK
+	FOREIGN KEY (id_info)
+	REFERENCES Information(id_info);
+
+ALTER TABLE Contenir
+	ADD CONSTRAINT Contenir_Beats0_FK
+	FOREIGN KEY (Id_Beat)
+	REFERENCES Beats(Id_Beat);
+
+ALTER TABLE Contenir
+	ADD CONSTRAINT Contenir_Playlist1_FK
+	FOREIGN KEY (Id_playlist)
+	REFERENCES Playlist(Id_playlist);
+
+ALTER TABLE Creer
+	ADD CONSTRAINT Creer_Beats0_FK
+	FOREIGN KEY (Id_Beat)
+	REFERENCES Beats(Id_Beat);
+
+ALTER TABLE Creer
+	ADD CONSTRAINT Creer_User1_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE Aimer
+	ADD CONSTRAINT Aimer_User0_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE Aimer
+	ADD CONSTRAINT Aimer_Beats1_FK
+	FOREIGN KEY (Id_Beat)
+	REFERENCES Beats(Id_Beat);
+
+ALTER TABLE Suivre
+	ADD CONSTRAINT Suivre_User0_FK
+	FOREIGN KEY (Id_user)
+	REFERENCES User(Id_user);
+
+ALTER TABLE Suivre
+	ADD CONSTRAINT Suivre_User1_FK
+	FOREIGN KEY (Id_user_Suivre)
+	REFERENCES User(Id_user);
+
