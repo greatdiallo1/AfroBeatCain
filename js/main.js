@@ -17,7 +17,18 @@ $(".maker").click(function(){
     gomaker()
 });
 
+$("#inputsearch").focus(function(){
+    document.addEventListener('keyup', (event) => {
+        $("main").hide();
+        $("#search").show();
+        if(document.querySelector("#inputsearch").value==""){
+            $("main").show();
+            $("#search").hide();
+        }
+    })
 
+
+});
 //array home
 var names = ["Le bon beat","Le retour du bon beat","un autre beat","Le beat","nom du beat","c'est un beat","un son ou un beat?","beat or not to beat","beat"]
 $("table:first-child td").click(function(){

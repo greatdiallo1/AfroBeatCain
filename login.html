@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html style="background-color:black;overflow:hidden;margin:0;padding:0;">
+<html style="background-color:black;overflow:hidden;">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AfroBeatCain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
@@ -31,7 +30,7 @@
       <input id="login" class="input is-rounded" type="text" placeholder="Login" style="position:absolute;background-color:rgb(255, 255, 255);width:60vw;top:30vh;left:20vw;">
       <input id="mdp" class="input is-rounded" type="password" placeholder="Password" style="position:absolute;width:60vw;top:38vh;left:20vw;">
       <a id="connect" class="button is-info is-outlined is is-rounded" style="position:absolute;width:40vw;top:50vh;left:30vw;">Connexion</a>
-      <a class="button is-info is-outlined is is-rounded" onclick="register()" style="position:absolute;width:40vw;top:58vh;left:30vw;">Register</a>
+      <a class="button is-info is-outlined is is-rounded" href="register.html" style="position:absolute;width:40vw;top:58vh;left:30vw;">Register</a>
       <a style="position:absolute;left:32vw;top:44vh;color:rgb(255, 136, 0);text-decoration-line:underline;" href="#">Forgot password ?</a>
     </div>
     <div>
@@ -39,6 +38,10 @@
       <input class="button is-danger is-outlined" type="submit" value="Login with Google+" style="position:absolute;border-radius:10px;height:6vh;width:40vh;left:13vw;top:80vh">
       <img src="img/facebook.svg" style="height:4vh;position:absolute;z-index:2;left:15vw;top:73vh;">
       <img src="img/google-plus.svg" style="height:4vh;position:absolute;z-index:2;left:16vw;top:81vh;">
+      <a href="javascript:history.back()"><i style="color:#ff8800;width:30vw;position:absolute;left:40vw;top:87vh;">Retour</i></a>
+    </div>
+    <div id="back">
+
     </div>
     <!--    -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>

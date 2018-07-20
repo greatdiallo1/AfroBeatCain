@@ -65,3 +65,16 @@ main{
 #search{
     display:none
 }
+#inputsearch{
+    transition: 0.3s;
+}
+#inputsearch:focus {
+    margin-left:11.5vw;
+    transition: 0.3s;
+}
+#inputsearch:focus ~ a{
+    display:none;
+}
+#inputsearch:focus ~ nav{
+    display:none;
+}
