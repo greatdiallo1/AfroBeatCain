@@ -23,7 +23,7 @@ body,html{
 
 #pre{
     position: absolute;
-   left: 40%;
+   left: 40vw;
    top: 70vh;
    color: rgb(228, 107, 59);
 }
@@ -34,7 +34,7 @@ body,html{
     margin-top: 20%;
 }
 #next{
-    margin-left: 5px;
+    margin-left: 1vw;
 }
 #songTitle{
     margin-bottom: 8vh;
@@ -166,19 +166,18 @@ input{
    
 /* }  */ 
  #seek-bar{
-    width: 250px;
+    width: 80vw;
     height: 5px;
     background-color: rgb(224, 207, 207);
     display: flex;
     border-radius: 50px;
-    margin-left: 25px;
+    margin:0 10vw;
     cursor: pointer;
 }
 #fill{
     height: 5px;
     background-color: rgb(165, 77, 26);
     border-radius: 20px;
-
 
 }
  #handle{
@@ -227,14 +226,13 @@ input{
     color: white;
     text-align: center;
     line-height: 18px;
-    position: relative;
+    position: absolute;
     left: 77vw;
-    top: 21.5vh; 
+    top: 86vh; 
     cursor: pointer;
 }
 #increase{
-    left: 14vw;
-    top: 21.5vh; 
+    left: 21vw; 
 }
 
 #lo{
@@ -254,7 +252,7 @@ input{
     position: absolute;
     top: 86vh;
     left: 21vw;
-    width: 170px;
+    width: 48vw;
     height: 5px;
     background-color: rgb(224, 207, 207);
     display: flex;
