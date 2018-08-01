@@ -1,0 +1,24 @@
+.mettreenligne {
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    align-content: center;
+}
+.cloud {
+    height: 15vh;
+    position: absolute;
+    top: 20vh;
+    left: 36vw;
+}
+input {
+    position: absolute;
+    cursor: pointer;
+    height: 10vh;
+    top: 40vh;
+    left: 24vw;
+    border-radius: 3px;
+    border: none;
+}
