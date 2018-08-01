@@ -8,23 +8,23 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css"/>
         <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css"/>
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/home.css"/>
     </head>
     <body>
         <nav class="navbar is-fixed-top is-black menu" role="navigation">
             <div class="navbar-brand">
                 <div class="navbar-start">
                     <input class="input" style="width:77vw;height:5.5vh;border:none;top:1vh;" font-color="red" type="text">
-                    <a href="login.html"><img src="img/profile.svg" style="height:5vh;margin:1vh 6vw;">   </a>
+                    <a href="login.html"><img src="img/profile.svg" style="height:4vh;margin:1vh 6vw;">   </a>
                 </div>
             </div>
         </nav>
-
         <nav class="navbar is-fixed-bottom is-black menu" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <div class="navbar-start">
                     <div>
-                        <a href="home.html"><img class="img" src="img/h.svg" width="30" height="40" alt="Home"></a> 
-                        <a href="hibrary.html"><img class="img" src="img/mus.svg" width="30" height="40" alt="Library"></a>
+                        <a href="home.html"><img class="img" src="img/h2.svg" width="30" height="40" alt="Home"></a> 
+                        <a href="library.html"><img class="img" src="img/mus.svg" width="30" height="40" alt="Library"></a>
                         <a href="market.html"><img class="img" src="img/s.svg" width="30" height="40" alt="Market"></a>
                         <a href="setting.html"><img class="img" src="img/set.svg" width="30" height="40"alt="Settings"></a>
                     </div>
@@ -32,9 +32,214 @@
                 </div>
             </div>
         </nav>
-        <!--<div class="container is-black">
-            <input class="input has-icons-left is-text" style="width:83vw;height:7vh;border:none;top:1vh;left:1vh;" type="text">
-            <img src="img/profile.svg" onclick="gologin()" style="height:5vh;position:fixed;left:88vw;bottom:93vh;">   
-        </div>-->
+        <div id="selectpays">
+            <select id="monselect">
+                <option value="valeur1">Afrique du nord</option> 
+                <option value="valeur2">Afrique de l'ouest</option>
+                <option value="valeur3">Afrique centrale</option>
+                <option value="valeur2">Afrique de l'est</option>
+                <option value="valeur3">Afrique du sud</option>
+            </select>
+        </div>
+        <section id="africa">
+            <img src="img/afrique.png">
+        </section>
+        <section class="slide">
+            <h5 class="slideTitle">Best beat</h5>
+            <div class="slidecontent">
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover1.jpg">
+                    <p>Nom chanson 1</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover2.jpeg">
+                        <p>Nom chanson 2</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover3.png">
+                        <p>Nom chanson 3</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover4.jpg">
+                    <p>Nom chanson 4</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover5.jpeg">
+                        <p>Nom chanson 5</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover6.jpeg">
+                        <p>Nom chanson 6</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="slide">
+            <h5 class="slideTitle">Best beatmaker</h5>
+            <div class="slidecontent">
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover7.jpg">
+                    <p>Nom chanson 1</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover4.jpg">
+                        <p>Nom chanson 2</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover6.jpeg">
+                        <p>Nom chanson 3</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover2.jpeg">
+                    <p>Nom chanson 4</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover1.jpg">
+                        <p>Nom chanson 5</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover6.jpeg">
+                        <p>Nom chanson 6</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="slide">
+            <h5 class="slideTitle">Pays du jour</h5>
+            <div class="slidecontent">
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover6.jpeg">
+                    <p>Nom chanson 1</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover4.jpg">
+                        <p>Nom chanson 2</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover3.png">
+                        <p>Nom chanson 3</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                <div class="item">
+                    <img src="img/cover4.jpg">
+                    <p>Nom chanson 4</p>
+                </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover2.jpeg">
+                        <p>Nom chanson 5</p>
+                    </div>
+                </article>
+                <article class="items icone musique">
+                    <div class="item">
+                        <img src="img/cover6.jpeg">
+                        <p>Nom chanson 6</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <table>
+                <tr>
+                    <td id="1" class="orange">top beat</td>
+                    <td id="2">latest beat</td>
+                    <td id="3">latest beatmaker</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="musique">Le bon beat</td>
+                    <td class="nop musique"> beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="musique">Le retour du bon beat</td>
+                    <td class="nop musique">c'est un beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="musique">un autre beat</td>
+                    <td class="nop musique">Le bon beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="musique">Le beat</td>
+                    <td class="nop musique">c'est un beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="musique">nom du beat</td>
+                    <td class="nop musique">Le retour du bon beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="musique">c'est un beat</td>
+                    <td class="nop musique">Le bon beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="musique">un son ou un beat?</td>
+                    <td class="nop musique">Le beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="musique">beat or not to beat</td>
+                    <td class="nop musique">un son ou un beat?</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="musique"> beat</td>
+                    <td class="nop musique">beat or not to beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="musique">Le beat</td>
+                    <td class="nop musique">Le beat</td>
+                    <td class="maker">the beatmaker</td>
+                </tr>
+            </table>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+
     </body>
 </html>
