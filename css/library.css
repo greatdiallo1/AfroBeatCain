@@ -29,7 +29,7 @@ html, body {
 }
 .titi {
     height: 10vh;
-    margin-top: 0vh!important;
+    margin-top: -2vh;
     width: 96vw;
     margin-left: 2vw;
     background-color: rgb(31, 30, 30);
@@ -48,7 +48,7 @@ html, body {
     margin-top: 2vh;
 }
 .favorites {
-    margin-top: 16.1vh;
+    margin-top: 13vh;
     margin-bottom: 10vh;
 }
 .song {
@@ -109,13 +109,13 @@ html, body {
 
 
 .playlists {
-    margin-top: 16vh;
+    margin-top: 13vh;
     margin-bottom: 10vh;
     width: 100vw;
     display: none;
 }
 .beatmaker {
-    margin-top: 16.1vh;
+    margin-top: 13vh;
     margin-bottom: 10vh;
     width: 100vw;
     display: none;
@@ -126,7 +126,7 @@ html, body {
     margin-top: 1.5vh;
 }
 .upload {
-    margin-top: 16.1vh;
+    margin-top: 13vh;
     margin-bottom: 10vh;
     width: 100vw;
     display: none;
