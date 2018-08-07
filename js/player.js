@@ -23,18 +23,18 @@ function playorOrPauseSong() {
     if (song.paused) {
         song.play();
         btn.classList.toggle('.changebutton');
-        //  $("#play img").attr("src","");
+         $("#play img").attr("src","img/pause2.png ");
 
     }
     else {
         song.pause();
-        //  $("#play img").attr("src","");
+         $("#play img").attr("src","img/play2.png ");
     }
 }
 
 song.addEventListener('timeupdate', function () {
     var position = song.currentTime / song.duration;
-    fillBar.style.width = position * 100 + '%';
+    // fillBar.style.width = position * 100 + '%';
 
     couverTime(Math.round(song.currentTime));
 
@@ -49,7 +49,7 @@ function couverTime(seconds) {
 
     min = (min < 10) ? "0" + min : min;
     sec = (sec < 10) ? "0" + sec : sec;
-    currentTime.textContent = min + ":" + sec;
+    // currentTime.textContent = min + ":" + sec;
 
     totalTime(Math.round(song.duration));
 }
@@ -60,7 +60,7 @@ function totalTime(seconds) {
 
     min = (min < 10) ? "0" + min : min;
     sec = (sec < 10) ? "0" + sec : sec;
-    currentTime.textContent += "/" + min + ":" + sec;
+    // currentTime.textContent += "/" + min + ":" + sec;
 }
 
 function next() {
@@ -76,7 +76,7 @@ function pre() {
         currentSong = songs.length;
     }
     playSong();
-    $("#play img").attr("src", "pause.png");
+    $("#play img").attr("src", "img/pause2.png ");
     $("#image img").attr("src", poster[currentSong]);
     $("#bg img").attr("src", poster[currentSong]);
 }
