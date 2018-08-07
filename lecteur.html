@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(28, 28, 32);">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AfroBeatCain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/player.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <section>
+        <div id="image">
+            <img src="img/p.png" alt="">
+        </div>
+        <div id="player">
+            <div id="songTitle">TOPE MUSIC
+                </div/>
+                <!-- <audio controls> -->
+                <source src="song/drake.mp3" type="audio/ogg">
+                <source src="song/a.ogg" type="audio/ogg">
+                <source src="song/c.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+           <div id="me"> <i class="fas fa-ellipsis-v"></i></div>
+            <div id="back">
+                <a href="javascript:history.back()"><i class="fas fa-chevron-left" style="color:#ff8800;"></i></A>
+            </div>
+
+            <div id="seek-bar">
+
+                <div id="fill"></div>
+            </div>
+            <div id="currenTime">00:00 / 00:00</div>
+
+            <div id="pre" onclick="pre()">
+                <i class="fas fa-backward"></i>
+            </div>
+            <div id="play" onclick="playorOrPauseSong()"><img src="img/pause.png "style="width:55px;height:30px;"/> </div>
+                <!-- <i class="fas fa-pause changebutton"></i> -->
+                <!-- <i class="fas fa-play"></i> -->
+               <div> <i class="fas fa-forward" id="next" onclick="next()"></i>
+            </div>
+            <div id="volume"></div>
+            <div id="lo">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div id="eu"> <i class="fas fa-euro-sign">
+                </i>
+            </div>
+            <!-- <div id="au"></div> -->
+            <input type="range" id="au" name="volume" min="0" max="10" />
+            <!-- <div id="handle"></div> -->
+
+            <div>
+                <!-- <button>   <i class="fas fa-volume-down" id="v1" onclick="decreaseVolume()"></i> </button></i> -->
+                <button id="decrease" onclick="increaseVolume()">+</button>
+                <!-- <div id="volumeIcon"><img src="<i class="fas fa-volume-up""/></div> -->
+                <button id="increase" onclick="decreaseVolume()">-</button>
+                <!-- <i class="fas fa-volume-up" id="v" onclick="increaseVolume()"></i> -->
+            </div>
+
+
+
+
+    </section>
+    
+    
+    <Script src="js/player.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    
+
+</body>
+
+</html>
