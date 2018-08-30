@@ -179,4 +179,5 @@ input:checked + .slider:before {
 
 hr{
     background:#662d91;
+    height: 1px;
 }
