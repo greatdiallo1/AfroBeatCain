@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: black;">
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -10,311 +10,287 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/library.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar is-fixed-top is-black menu" role="navigation">
         <div class="navbar-brand">
             <div class="navbar-start">
-                <input class="input" id="inputsearch"style="width:77vw;height:5.5vh;border:none;top:1vh;left:1vh;" font-color="red" type="text">
-                <a href="login.html">
-                    <img src="img/profile.svg" style="height:5vh;margin:1vh 5vw;"> </a>
+                <input id="inputsearch" font-color="red" type="text">
             </div>
         </div>
     </nav>
     <main>
-    <nav class="navbar demer">
-        <div class="navbar-brand">
-            <div class="navbar-start">
-                <ul class="pl">
-                    <li class="lp" onclick="showPage('.favorites')">Favorites</li>
-                    <li class="lp" onclick="showPages('.playlists')">Playlists</li>
-                    <li class="lp" onclick="showPag('.beatmaker')">Beatmakers</li>
-                    <li class="lp" onclick="showPa('.upload')">Your uploads</li>
-                </ul>
+        <nav class="navbar demer">
+            <div class="navbar-brand">
+                <div class="navbar-start">
+                    <ul class="pl">
+                        <li class="lp" onclick="showPage('.favorites')">Favorites</li>
+                        <li class="lp" onclick="showPages('.playlists')">Playlists</li>
+                        <li class="lp" onclick="showPag('.beatmaker')">Beatmakers</li>
+                        <li class="lp" onclick="showPa('.upload')">Your uploads</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="favorites">
-        <ul id="accordeon">
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrementé" détaillée du beat: origine, etc</p>
-            <li class="tit">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Groove / ChillOut</h2>
-                <h3 class="songdesc maker">Artiste inconnu | 2:35</h3>
-            </li>
-            <p class="contenu">Description "légèrementé" détaillée du beat: origine, etc</p>
-        </ul>
-    </section>
+        </nav>
+        <section class="favorites">
+            <ul id="accordeon">
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrement" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrementé" détaillée du beat: origine, etc</p>
+                <li class="tit">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Groove / ChillOut</h2>
+                    <h3 class="songdesc maker descri">Artiste inconnu | 2:35</h3>
+                </li>
+                <p class="contenu">Description "légèrementé" détaillée du beat: origine, etc</p>
+            </ul>
+        </section>
 
-    <section class="playlists">
-        <ul id="accordeon">
-            <li class="tit">
-                <img class="icone musique" src="img/playlist.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Playlist name</h2>
-                <h3 class="songdesc">How much songs</h3>
-            </li>
-            <div class="content">
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
+        <section class="playlists">
+            <ul id="accordeon">
+                <li class="tit">
+                    <img class="icone musique" src="img/playlist.svg" alt="">
                     <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Playlist name</h2>
+                    <h3 class="songdesc descri">How much songs</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
+                <div class="content">
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                </div>
+                <li class="tit">
+                    <img class="icone musique" src="img/playlist.svg" alt="">
                     <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Playlist name</h2>
+                    <h3 class="songdesc descri">How much songs</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
+                <div class="content">
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                </div>
+                <li class="tit">
+                    <img class="icone musique" src="img/playlist.svg" alt="">
                     <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Playlist name</h2>
+                    <h3 class="songdesc descri">How much songs</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
+                <div class="content">
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                </div>
+                <li class="tit">
+                    <img class="icone musique" src="img/playlist.svg" alt="">
                     <img src="img/shopping-basket.svg" class="basket" alt="">
+                    <img src="img/arrowdown.svg" class="arrow ti">
+                    <h2 class="song">Playlist name</h2>
+                    <h3 class="songdesc descri">How much songs</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <div class="content">
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                    <li class="titi">
+                        <img class="icon" src="img/play.svg" alt="">
+                        <img src="img/shopping-basket.svg" class="basket" alt="">
+                    </li>
+                </div>
+            </ul>
+        </section>
+        <section class="beatmaker">
+            <ul id="accordeon">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-            </div>
-            <li class="tit">
-                <img class="icone musique" src="img/playlist.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Playlist name</h2>
-                <h3 class="songdesc">How much songs</h3>
-            </li>
-            <div class="content">
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-            </div>
-            <li class="tit">
-                <img class="icone musique" src="img/playlist.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Playlist name</h2>
-                <h3 class="songdesc">How much songs</h3>
-            </li>
-            <div class="content">
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
+                <li class="tit">
+                    <img class="ico maker" src="img/dj.svg" alt="">
+                    <h2 class="song maker">David Dj</h2>
+                    <h3 class="songdesc descri">3M followers</h3>
                 </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-            </div>
-            <li class="tit">
-                <img class="icone musique" src="img/playlist.svg" alt="">
-                <img src="img/shopping-basket.svg" class="basket" alt="">
-                <img src="img/arrowdown.svg" class="arrow ti">
-                <h2 class="song">Playlist name</h2>
-                <h3 class="songdesc">How much songs</h3>
-            </li>
-            <div class="content">
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-                <li class="titi">
-                    <img class="icon" src="img/play.svg" alt="">
-                    <img src="img/shopping-basket.svg" class="basket" alt="">
-                </li>
-            </div>
-        </ul>
-    </section>
-    <section class="beatmaker">
-        <ul id="accordeon">
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
-            <li class="tit">
-                <img class="ico maker" src="img/dj.svg" alt="">
-                <h2 class="song maker">David Dj</h2>
-                <h3 class="songdesc">3M followers</h3>
-            </li>
 
-        </ul>
-    </section>
-    <section class="upload">
-        <ul id="accordeon">
-            <li class="upld">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/more.svg" class="more">
-                <h2 class="song">MyFirstBeatName</h2>
-                <h3 class="songdesc">Uploaded 11/07/2018 | 2:35</h3>
-            </li>
-            <li class="upld">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/more.svg" class="more">
-                <h2 class="song">MyFirstBeatName</h2>
-                <h3 class="songdesc">Uploaded 11/07/2018 | 2:35</h3>
-            </li>
-            <li class="upld">
-                <img class="icone musique" src="img/play.svg" alt="">
-                <img src="img/more.svg" class="more">
-                <h2 class="song">MyFirstBeatName</h2>
-                <h3 class="songdesc">Uploaded 11/07/2018 | 2:35</h3>
-            </li>
-        </ul>
-    </section>
+            </ul>
+        </section>
+        <section class="upload">
+            <ul id="accordeon">
+                <li class="upld">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/more.svg" class="more">
+                    <h2 class="song">MyFirstBeatName</h2>
+                    <h3 class="songdesc descri">Uploaded 11/07/2018 | 2:35</h3>
+                </li>
+                <li class="upld">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/more.svg" class="more">
+                    <h2 class="song">MyFirstBeatName</h2>
+                    <h3 class="songdesc descri">Uploaded 11/07/2018 | 2:35</h3>
+                </li>
+                <li class="upld">
+                    <img class="icone musique" src="img/play.svg" alt="">
+                    <img src="img/more.svg" class="more">
+                    <h2 class="song">MyFirstBeatName</h2>
+                    <h3 class="songdesc descri">Uploaded 11/07/2018 | 2:35</h3>
+                </li>
+            </ul>
+        </section>
 
-    <nav class="navbar is-fixed-bottom is-black menu" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <div class="navbar-start">
+        <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
                 <a href="home.html">
-                    <img class="img" src="img/h.svg" width="30" height="40" alt="Home">
+                    <img src="img/h.svg" alt="Home">
                 </a>
+                <hr>
                 <a href="library.html">
-                    <img class="img" src="img/mus2.svg" width="30" height="40" alt="Library">
+                    <img src="img/mus2.svg" alt="Library">
                 </a>
+                <hr class="hrbiss">
+                <a href="profil.html">
+                    <img src="img/profil1.jpg" id='profil'>
+                </a>
+                <hr class="hrbiss">
                 <a href="market.html">
-                    <img class="img" src="img/s.svg" width="30" height="40" alt="Market">
+                    <img src="img/s.svg" alt="Market">
                 </a>
+                <hr>
                 <a href="setting.html">
-                    <img class="img" src="img/set.svg" width="30" height="40" alt="Settings">
+                    <img src="img/set.svg" alt="Settings">
                 </a>
             </div>
-        </div>
-    </nav>
-</main>
+        </nav>
+    </main>
     <section id="search">
         <h5>Beats</h5>
         <ul>
@@ -322,28 +298,28 @@
                 <img src="img/cover3.png" class="musique">
                 <div>
                     <p class="musique">Beat or not to beat</p>
-                    <p class="maker">Beatmaker64</p>
+                    <p class="maker descri">Beatmaker64</p>
                 </div>
             </li>
             <li>
                 <img src="img/cover6.jpeg" class="musique">
                 <div>
                     <p class="musique">Mega beat</p>
-                    <p class="maker">Beatmaker64</p>
+                    <p class="maker descri">Beatmaker64</p>
                 </div>
             </li>
             <li>
                 <img src="img/cover5.jpeg" class="musique">
                 <div>
                     <p class="musique">Un son ou un beat?</p>
-                    <p class="maker">Beast maker</p>
+                    <p class="maker descri">Beast maker</p>
                 </div>
             </li>
             <li>
                 <img src="img/cover4.jpg" class="musique">
-                <div >
+                <div>
                     <p class="musique">Un beat en sucre</p>
-                    <p class="maker">The beatmaker</p>
+                    <p class="maker descri">The beatmaker</p>
                 </div>
             </li>
         </ul>
@@ -351,7 +327,7 @@
         <ul>
             <li>
                 <img src="img/dj.svg" class="maker">
-                <p class="maker">Beatmaker64</p>
+                <p class="maker ">Beatmaker64</p>
             </li>
             <li>
                 <img src="img/profil2.jpg" class="maker">
@@ -364,10 +340,10 @@
         </ul>
         <h5>Tags</h5>
         <ul>
-            <li><a>Guitare</a></li>
-            <li><a>Cote d'Ivoire</a></li>
-            <li><a>Afrique du Sud</a></li>
-            <li><a>Coupé décalé</a></li>
+            <li class="tags">Guitare</li>
+            <li class="tags">Cote d'Ivoire</li>
+            <li class="tags">Afrique du Sud</li>
+            <li class="tags">Coupé décalé</li>
         </ul>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

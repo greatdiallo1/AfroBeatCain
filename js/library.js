@@ -23,10 +23,8 @@ accordion_head.on('click', function(event) {
 		$(this).addClass('active');
     }
     else{
-
 		accordion_body.slideUp('normal');
 		accordion_bod.slideUp('normal');
-
 		accordion_head.removeClass('active');
     }
 });
