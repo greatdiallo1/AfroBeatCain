@@ -1,0 +1,115 @@
+html {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+body{
+    padding-bottom:10vh;
+}
+
+.panier {
+    margin-top: 8vh;
+}
+.details {
+    margin-left: 50vw;
+    margin-top: -20vh;
+}
+h1 {
+    font-size: 1.6em;
+    margin-top: 12vh;
+    margin-left: 8vw;
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: .8em;
+    margin-top: 2vh;
+}
+section img {
+    height: 20vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+}
+
+.song2 {
+    margin-top: 10vh;
+}
+
+.song2 img {
+    width: 35vw;
+}
+
+p {
+    margin-top: 8vh;
+    margin-left: 32vw;
+}
+button {
+    border: none;
+    background-color: #662d91;
+    height: 5vh;
+    width: 35vw;
+    margin-left: 32.5vw;
+    margin-top: 5vh;
+    color: white;
+}
+
+
+
+/* PAGE DEUX DU MARKET, SOIT market.1.html */
+
+.checkbox {
+    margin-top: 3vh;
+}
+
+section div input {
+    margin-left: 50vw;
+}
+para {
+    font-size: .8em;
+}
+
+
+/* PAGE DEUX DU MARKET, SOIT market.2.html */
+form h3 {
+    margin-left: 15vw;
+    margin-bottom: 2vh;
+}
+
+form {
+    margin-top: 5vh;
+}
+form input {
+    margin-left: 20vw;
+}
+h4 {
+    margin-left: 30vw;
+    margin-top: -4vh;
+}
+
+
+/* PAGE DEUX DU MARKET, SOIT market.3.html */
+
+div form input {
+    margin-left: -5vw;
+}
+div form h4 {
+    margin-left: -1vw;
+}
+div form {
+    margin-top: -0vh;
+}
+
+section div p {
+    font-size: .9em;
+    margin-left: 10vw;
+    margin-top: 0vh;
+}
+section div p:first-child {
+    margin-top: 5vh;
+}
+section div p:last-child {
+    margin-bottom: 5vh;
+}
+section p {
+    margin-top: 5vh;
+}
