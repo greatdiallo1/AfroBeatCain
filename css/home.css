@@ -1,27 +1,11 @@
-body{
-    padding-bottom:10vh;
-}
-#selectpays{
-    background: rgba(31, 30, 30, 0.788);
-}
-#monselect{
-    background: rgb(175, 175, 175);
-    border:none;
-    margin: 10vh 25% 2vh;
-    width: 50%;
-}
-option:hover{
-    background:black;
-}
-
 #africa{
-   margin-top : 2vh;
+   margin:auto;
+   margin-top : 10vh;
+   width: 80vw;
 }
 /* gallery */
 .slide{
-    background:rgb(46, 46, 46);
     border-radius: 2vw;
-    color:white;
     margin:3vh 3vw;
     padding: 2vw;
 }
@@ -29,28 +13,34 @@ h5{
     margin:1vw 1vw -2vw 1vw;
 }
 .item{
-    background: rgb(65, 65, 65);
+    background: #414141;
     margin:2.5vh 1vw 0;
-    padding:4vw 2.5vw 4vw 4vw;
-    width: 28vw;
+    overflow: hidden;
+    position: relative;
+    /* padding:4vw 2.5vw 4vw 4vw; */
+    width: 25vw;height: 25vw;
 }
 .item img{
-    width: 17vw;
+    width: 25vw;height: 25vw;
     margin:auto;
 }
 .item p{
-    width: 20vw;
-    height: 14vw;
-    overflow: hidden;
+    background: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    text-align: center;
+    top:0;
+    width: 100%;
+    /* width: 20vw;
+    height: 14vw; */
+    
 }
 .slidecontent{
     display: flex;
-    overflow: scroll
+    overflow: scroll;
 }
 /* array */
-
 table{
-    background: rgb(202, 202, 202);
+    background: rgb(136, 136, 136);
     margin:1vh 3vw;
     width: 94vw;
 }
@@ -65,11 +55,4 @@ table:first-child td{
     font-size: 0.9em;
     padding:0 3vw;
     margin-top: 5vh;
-    text-align: center;
-}
-.orange{
-    background: #ff8800;
-}
-.nop{
-    display:none;
-}
+    text-align: center;}

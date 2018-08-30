@@ -1,0 +1,98 @@
+.profil{
+    background: linear-gradient(-45deg, rgba(0,0,0,1) 20%, rgb(23, 0, 36) 50%, rgba(0,0,0,1) 80%); /* FF3.6-15 */
+    margin-top: -45vh;
+    padding-top:20px;
+    position: fixed;
+    height: 45vh; width: 100%;
+    z-index: 1000;
+}
+#profilpic{
+    width: 20vh;height: 20vh;
+    border-radius : 100%;
+    margin: -1.5vh auto 0.5vh;
+}
+.profilname{
+    font-size: 1.3em;
+    height: 5vh;
+    margin:0;
+}
+.follow{
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0px -2px 30px -5px black inset;
+    margin:1vh auto;
+    width: 20vw;
+}
+.following{
+    background: gray;
+    border-radius: 5px;
+    box-shadow: 0px -2px 30px -5px black inset;
+    margin:1vh auto;
+    width: 25vw;
+}
+.profildescri{
+    color:rgba(255, 255, 255, 0.582);
+    font-size: 0.9em;
+    height: 7vh;
+    overflow: hidden;
+}
+#navig {
+    /* background: white; */
+    display: flex;
+    height: 4vh;
+    margin : 0;
+}
+.profmen{
+    /* color:black; */
+    width: 50vw;
+}
+.ProfSelect{
+    border-bottom: 0.1em #662d91 solid;
+    color : #662d91;
+}
+
+section{
+    list-style:none;
+    margin-top:45vh;
+    margin-bottom: 9vh;
+}
+
+.menu #profil{
+    Background-color: white;
+    border: white solid 0.6vw;  
+}
+.productions{
+    position: relative;
+    display: none;
+}
+.addsong{
+    background: green;
+    border-radius:50%;
+    font-size: 3em;
+    position: fixed;
+    top:80%; right:3%;
+    width: 9vh;height: 9vh;
+    z-index: 100;
+}
+.addsong img{
+    position: absolute;
+    margin:24.5%;
+    width: 50%;height: 50%;
+}
+.details{
+    display: block;
+    height: 46vh;
+}
+.listag{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listag .items{
+    background-color: #2e2e2e;
+    border:rgba(128, 128, 128, 0.596) 0.05em solid;
+    border-radius: 10px;
+    color : white;
+    padding: 1vh 1vw;
+    margin:1vh 2vw;
+}
+
