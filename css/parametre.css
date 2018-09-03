@@ -7,6 +7,7 @@ body,html{
 main{
     font-size: 0.9em;
     padding:10vw;
+    margin-bottom: 5vh;
     margin-top:5vh;
     width: 100vw;height: 95vh;
 }
