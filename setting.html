@@ -14,30 +14,51 @@
 </head>
 
 <body>
+    <nav class="navbar is-fixed-top is-black menu" role="navigation">
+        <div class="navbar-brand">
+            <div class="navbar-start">
+                <a href="home.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="contenaire">
-        <div id="back">
-            <a href="javascript:history.back()">
-                <i class="fas fa-chevron-left" style="color:#ff8800;"></i>
-            </a>
+    <main>
+        <h1>Paramètres</h1>
+        <hr>
+        <h3>Mon Compte</h3><br>
+        <div><img src="img/user.svg"><p>Déconnexion</p></div>
+        <div><img src="img/historique.png"><p>Historique des achats</p></div>
+        <h3>Style : </h3>
+        <div class="colorstyle">
+             <p>Sombre</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Clair</p>
+        </div>      
+        <hr>
+        <div>
+            <p>Langues :</p>
+            <select id="mselect">
+                <option value="langue1">Français</option>
+                <option value="langue1">Anglais</option>
+            </select>
         </div>
-        <div class="compte">Compte
-            <i class="fas fa-chevron-right" id="next"></i>
-        </div>
-        <div class="langue">Langue
-            <i class="fas fa-chevron-right" id="langue"></i>
-        </div>
-        <div class="propos">A propos
-            <i class="fas fa-chevron-right" id="propos"></i>
-        </div>
-        <div class="condition">Conditions d'utilisation
-            <i class="fas fa-chevron-right" id="condition"></i>
-        </div>
+        <hr>
+        <div>Licences :</div>
+        <hr>
+        <div>Conditions légales</div>
+        <div>Conditions ventes</div>
+        <hr>
+        <div>Version d'Afrobeat : 1.0.1</div>
+        
 
-    </div>
-    <div>
-        <a id="connect" class="button is-info is-outlined is is-rounded">Déconnexion</a>
-    </div>
+    </main>
+
+
     <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a href="home.html">

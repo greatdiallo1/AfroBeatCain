@@ -18,7 +18,10 @@
     <nav class="navbar is-fixed-top is-black menu" role="navigation">
         <div class="navbar-brand">
             <div class="navbar-start">
-                <input id="inputsearch" font-color="red" type="text">
+                <div class="quitsearch hidden"><i class="far fa-times-circle"></i></div>
+                <div class="logo"></div>
+                <img class="searchicon"src="img/icons/magnifier.svg">
+                <input id="inputsearch" font-color="red" type="text" placeholder="Search">
             </div>
         </div>
     </nav>
@@ -301,10 +304,10 @@
     </section>
     <section class="BigPlayer">
         <p id="buttonup">▲</p>
-        <div class="changing">
+        <div class="changing" style="color:black">
             <img id="playerimg" src="img/song/cover9.jpg">
             <div>
-                <h3>Wizkid</h5>
+                <h3 class="maker">Wizkid</h5>
                 <h4>Starboy</h4> 
                 <p>Licence : copyright</p>
                 <p>Label : Azaryel Rds</p>
@@ -319,6 +322,11 @@
                     <p>Track 6</p>
                     <p>Track 7</p>
                     <p>Track 8</p>
+                </div>
+                <div class="playerlink">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-heart"></i>
                 </div>
             </div>
         </div>
@@ -341,6 +349,7 @@
                     <button id="next" class="lecteurButton"><i class="fas fa-forward"></i></button>
                     <a href="market.html"><button class="lecteurButton littleButton"><i class="fas fa-cart-plus"></i></button></a>
                     <button class="lecteurButton more"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="morediv"></div>
                 </div>
                 <div id="progress">
                     <div id="progressBar"></div>

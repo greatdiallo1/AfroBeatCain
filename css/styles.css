@@ -55,6 +55,22 @@ main{
     overflow: hidden;
 }
 /* ----------------------------------------- Fixed Navs bar ---------------------------------------------- */
+.logo{
+    background: url("../img/icons/logo.svg") no-repeat;
+    background-size:cover; 
+    width: 6vw; height: 6vw;
+    margin:4vw;
+    position: absolute;
+}
+.quitsearch{
+    color :#6c418d;
+    font-size: 6vw; 
+    margin:3vw 4vw;
+    padding-right: 5vw;
+    position: absolute;
+    text-align: center;
+    width: 6vw;height: 6vw;
+} 
 .menu{
     width: 100vw;
     margin: 0px;padding: 0px;
@@ -78,13 +94,35 @@ hr{
 .hrbiss{
     height: 5vw;
 }
+.searchicon{
+    position: absolute;
+    margin: 4vw;
+    right:-4vw;
+}
+.searchicon:focus {
+    top:10vh;
+}
+
 /* ----------------------------------------- Search section ---------------------------------------------- */
 
-input{
-    border-radius: 5px;
-    margin:2vw;
+.menu input{
+    background: #0a0a0a00;
     border:none;
-    width:96vw;height:3.5vh;
+    border-bottom: solid 0.1em #662d91;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    margin:2vw;
+    position: absolute;
+    right:10vw;
+    transition: 0.2s;
+    width:0vw;height:4vh;
+}
+input::placeholder{
+    color:#303030;
+}
+.inputclicked{
+    transition: 0.3s;
+    width:75vw!important;
 }
 #search{
     background: #05060c;
@@ -121,6 +159,13 @@ input{
     color:white;
     padding: 1vh 1vw;
     margin:0.5vh -10% -3vh 0 ;
+}
+.playerlink i{
+    border : solid 0.1em;
+    border-radius:100%;
+    padding-top:2%;margin:5vw 1vw;
+    text-align: center;
+    width: 6vw; height: 6vw;
 }
 /* ----------------------------------------- Player ---------------------------------------------- */
 /* Open Player */
@@ -175,10 +220,10 @@ input{
     font-size:0.9em;
 }
 .playerplaylist{
- height: 30vw;
- border-left: 0.05em  solid;
- padding-left:1vw; 
- overflow-y: scroll;
+    height: 30vw;
+    border-left: 0.05em  solid;
+    padding-left:1vw; 
+    overflow-y: scroll;
 }
 /* Claused Player */
 #audioplayer{
@@ -283,15 +328,18 @@ input[type=range]::-webkit-slider-thumb {
     display:none;}
 .show{
     display:block;}
-.font1{
-    font-family: codebold, sans-serif;
-    
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
+.font1{
+    font-family: codebold, sans-serif;}
 .font2{
     color : white;
     font-size: 0.9em;
-    font-family: codelight, sans-serif;
-    
+    font-family: codelight, sans-serif;  
 }
 .degrade{
     background: linear-gradient(to bottom, #000000 0%,#662d91 200%); 
@@ -302,6 +350,9 @@ input[type=range]::-webkit-slider-thumb {
 }
 .maincolor{
     color: #662d91;}
+.red{
+    color: red;
+}
 .orange{
     background: #ff8800;}
 .gris0{

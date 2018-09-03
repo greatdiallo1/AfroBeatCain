@@ -1,5 +1,5 @@
 .demer {
-    top: 7.8vh;
+    top: 12.7vw;
     position: fixed;
     width: 100vw;
 }
@@ -11,7 +11,7 @@
 
 .lp {
     color:black;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 5vw;
     margin-top: 2vh;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AfroBeatCain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/market.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+</head>
+
+<body class="degrade">
+        <nav class="navbar is-fixed-top is-black menu" role="navigation">
+                <div class="navbar-brand">
+                    <div class="navbar-start">
+                        <a href="home.html"><div class="logo"></div></a>
+                    </div>
+                </div>
+            </nav>
+    <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="home.html">
+                <img src="img/h.svg" alt="Home">
+            </a>
+            <hr>
+            <a href="library.html">
+                <img src="img/mus.svg" alt="Library">
+            </a>
+            <hr class="hrbiss">
+            <a href="profil.html">
+                <img src="img/profil1.jpg" id='profil'>
+            </a>
+            <hr class="hrbiss">
+            <a href="market.html">
+                <img src="img/s2.svg" alt="Market">
+            </a>
+            <hr>
+            <a href="setting.html">
+                <img src="img/set.svg" alt="Settings">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="panier">
+            <h1>Licences Reminder </h1>
+            <div>
+                <img src="./img/songMarket1.jpg" alt="Artist">
+                <div class="details">
+                    <h2>
+                        <strong>Wizzkid :</strong> PRIX : 40$</h2>
+                    <h3>
+                        <strong>Come Closer</strong>
+                        </br>3:36s</br>Lorem Ipsum</h3>
+                </div>
+                <div>
+                    <div class="validzone">
+                        <div><div>J'accepte les conditions</div><div class="validboite"></div></div>
+                        <div><div>Télécharger licence</div><div class="validboite"></div></div>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="song2">
+                <img src="./img/songMarket3.jpg" alt="Artist">
+                <div class="details">
+                    <h2>
+                        <strong>Lil Peep :</strong> PRIX : 1200$</h2>
+                    <h3>
+                        <strong>Awfull Things</strong>
+                        </br>3:33s</br>Lorem Ipsum</h3>
+                </div>
+                <div class="validzone">
+                        <div><div>J'accepte les conditions</div><div class="validboite"></div></div>
+                        <div><div>Télécharger licence</div><div class="validboite"></div></div>
+                </div>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</h3>
+                
+            </div>
+            <hr>
+            <nav class="marketnav">
+                <a href="market.html"><button>Retour</button></a>
+                <a href="market.2.html"><button>Suivant</button></a>
+            </nav>
+            
+
+        </section>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+    $(".validboite").click(function(){
+        console.log($(".validboite").css('background-color'))
+        if($(this).css('background-color') == 'rgb(0, 0, 0)'){
+            $(this).css('background-color',"white")
+        }
+        else{
+            $(this).css('background-color',"black")
+        }
+    });
+    </script>
+</body>
+
+</html>
