@@ -6,45 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AfroBeatCain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+<!--     <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" /> -->
+<!--     <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newstyles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar is-fixed-top is-black menu" role="navigation">
-        <div class="navbar-brand">
-            <div class="navbar-start">
-                <input id="inputsearch" font-color="red" type="text">
-            </div>
-        </div>
+    <nav class="topnavig menus" role="navigation">
+        <div class="quitsearch hidden"><i class="far fa-times-circle"></i></div>
+        <div class="logo"></div>
+        <img class="searchicon"src="img/icons/magnifier.svg">
+        <input id="inputsearch"  type="text" placeholder="Search">
     </nav>
-    <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+
+    <nav class="bottomnavig menus" >
             <a href="home.html">
                 <img src="img/h2.svg" alt="Home">
             </a>
-            <hr>
+            <hr class="hr">
             <a href="library.html">
                 <img src="img/mus.svg" alt="Library">
             </a>
-            <hr class="hrbiss">
+            <hr class="hrbiss hr">
             <a href="profil.html">
                 <img src="img/profil1.jpg" id='profil'>
             </a>
-            <hr class="hrbiss">
+            <hr class="hrbiss hr">
             <a href="market.html">
                 <img src="img/s.svg" alt="Market">
             </a>
-            <hr>
+            <hr class="hr">
             <a href="setting.html">
                 <img src="img/set.svg" alt="Settings">
             </a>
-        </div>
     </nav>
+
+    
     <main class="degrade">
         <section id="africa">
             <img src="img/afrique.png">
@@ -243,7 +243,7 @@
                 </tr>
             </table>
         </section>
-    </main>
+    </main> 
     <section id="search">
         <h5>Beats</h5>
         <ul>
@@ -301,10 +301,10 @@
     </section>
     <section class="BigPlayer">
         <p id="buttonup">▲</p>
-        <div class="changing">
+        <div class="changing" style="color:black">
             <img id="playerimg" src="img/song/cover9.jpg">
             <div>
-                <h3>Wizkid</h5>
+                <h3 class="maker">Wizkid</h5>
                 <h4>Starboy</h4> 
                 <p>Licence : copyright</p>
                 <p>Label : Azaryel Rds</p>
@@ -320,13 +320,18 @@
                     <p>Track 7</p>
                     <p>Track 8</p>
                 </div>
+                <div class="playerlink">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
             </div>
         </div>
     </section>
     <figure id="audioplayer">
             <div id="texte">
-                <h2>Wizkid</h2>
-                <h1>Starboy</h1>
+                <h3>Wizkid</h3>
+                <h4>Starboy</h4>
             </div>
             <article id="player">
                 <audio src = "audio/Starboy.mp3" id="audiotrack"></audio>
@@ -341,6 +346,7 @@
                     <button id="next" class="lecteurButton"><i class="fas fa-forward"></i></button>
                     <a href="market.html"><button class="lecteurButton littleButton"><i class="fas fa-cart-plus"></i></button></a>
                     <button class="lecteurButton more"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="morediv"></div>
                 </div>
                 <div id="progress">
                     <div id="progressBar"></div>

@@ -15,13 +15,12 @@ playButton.addEventListener("click", player);
 volumeIcon.addEventListener("click", function(){
     volume.classList.toggle ("hidden")
     setTimeout(function(){
-        volume.classList.add ("hidden");
+        volume.classList.add ("volopen");
     },3000)
 });
 volume.addEventListener("input", function(){ 
 	audioTrack.volume = volume.value;
 });
-
 $(".BigPlayer #buttonup").click(function(){openplayer()});
 $("#audioplayer #texte").click(function(){openplayer()});
 
@@ -92,6 +91,11 @@ function changerSrc(song){
                 <p>Track 7</p>
                 <p>Track 8</p>
             </div>
+            <div class="playerlink">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-heart"></i>
+            </div>
         </div>
 
         ` ;
@@ -104,6 +108,22 @@ function changerSrc(song){
     }
     player();
 }
+// Remove the big player when search is activated
+$("#inputsearch").focus(function(){
+    document.addEventListener('keyup', (event) => {
+        $(".BigPlayer").removeClass('open');
+        $(".BigPlayer #buttonup").text("▲");
+        close = false
+    })
+});
+
+// Play clicked song and opens the big player
+$(".musique").click(function(){
+    next();
+    openplayer();
+});
+
+
 
 //Previous song
 document.querySelector("#next").onclick = next;

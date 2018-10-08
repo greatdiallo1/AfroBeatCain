@@ -1,36 +1,84 @@
-.demer {
-    top: 7.8vh;
+
+main{
+    height: 80vh;
+    margin-top:6vh;
+    background-color: rgb(31, 30, 30);
+}
+ul{
+    list-style: none;
+    margin:0;padding:0;
+}
+.navig {
+    height: 2vh;
+    background: white;
+    top: 7vh;
     position: fixed;
     width: 100vw;
+    z-index: 1000;
+    padding:2vh 0vw;
 }
 
-.pl {
+.libraryMenu {
+    font-family: 'codebold', sans-serif;
+    height: 4vh;
     display: flex;
     justify-content: space-between;
 }
 
-.lp {
-    color:black;
-    font-size: 0.9em;
-    margin-left: 5vw;
-    margin-top: 2vh;
+.libraryItems {
+    margin:0 1vw;
+    color: #6c418d;
+}
+.libraryItems:first-child {
+    margin-left: 1vw;
+}
+.libraryItems:last-child {
+    margin-right: 1vw;
 }
 
-.tit {
+@media (max-width: 1500px) {
+    .libraryItems{
+        font-size: 1em;
+    }
+}
+@media (max-width: 800px) {
+    .libraryItems{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 340px) {
+    .libraryItems{
+        font-size: 0.8em;
+    }
+}
+.liFav {
     height: 12vh;
     width: 100vw;
+    margin:0vw;
     background-color: rgb(31, 30, 30);
     box-shadow: 0px -15px 50px -20px black inset;
+    position: relative;
 }
 .titi {
-    height: 10vh;
-    width: 100vw;
+    background: rgba(196, 196, 196, 0.644);
+    height: 8vh;
+    width: 96vw;
+    margin-left: 2vw;
     background-color: rgb(31, 30, 30);
     box-shadow: 0px -15px 50px -20px black inset;
-    margin-bottom: -1vh;
+    padding-top:4vh ;
+    position: relative;
 }
-
-
+.content .titi{
+    background: rgb(43, 43, 43);
+}
+.titi h2, .titi h3{
+    position: absolute;
+    top:0vh;
+}
+.titi h3{
+    top:4vh;
+}
 .icone {
     height: 6vh;
     margin-left: 2vh;
@@ -41,26 +89,32 @@
     margin-left: 2vh;
     margin-top: 2vh;
 }
-.favorites {
-    margin-top: 16.1vh;
-    margin-bottom: 10vh;
+.titi .icon{
+    height: 4vh;
+    margin-top:0;
 }
 .song {
     margin-top: -8.5vh;
     margin-left: 20vw;
+    color: white;
+    font-size: 1em;
 }
 .songdesc {
     margin-left: 20vw;
     margin-top: 2vh;
+    font-size: .8em;
+    color: white;
 }
 .son {
     text-align: center;
     margin-top: -10vh;
+    color: white;
     font-size: .8em;
 }
 .songdes {
     text-align: center;
     margin-top: 2vh;
+    color: white;
     font-size: .6em;
 }
 .basket {
@@ -71,7 +125,7 @@
     display: none;
 }
 .arrow {
-    height: 5vh;
+    height: 3vh;
     left:85vw;
     margin-top: 4vh;
     position: absolute;
@@ -83,18 +137,27 @@
     width: 100vw;
     position: absolute;
 }
+.contenu {
+    height: 14vh;
+    width: 100vw;
+    margin:0vw;
+    display: none;
+    background: rgb(36, 36, 36);
+}
+.content {
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    overflow: scroll;
+}
 
 
 .playlists {
-    margin-top: 16vh;
-    margin-bottom: 10vh;
     width: 100vw;
     display: none;
 }
-/*beatmakers */
 .beatmaker {
-    margin-top: 16.1vh;
-    margin-bottom: 10vh;
     width: 100vw;
     display: none;
 }
@@ -103,24 +166,23 @@
     margin-left: 1.5vh;
     margin-top: 1.5vh;
 }
-
-/* your uploads */
 .upload {
-    margin-top: 16.1vh;
-    margin-bottom: 10vh;
     width: 100vw;
     display: none;
 }
 .upld {
     height: 12vh;
-    width: 100vw;
-    
+    width: 97vw;
+    margin-left: 1.5vw;
     background-color: rgb(31, 30, 30);
-    box-shadow: 0px -15px 50px -20px black inset;
+    box-shadow: 0px -15px 50px -20px rgb(150, 8, 8) inset;
 }
 .more {
-    height: 5vh;
+    height: 3vh;
     left:86vw;
     margin-top: 3.5vh;
     position: absolute;
+}
+.underbar{
+    color:  #ad83ce;
 }

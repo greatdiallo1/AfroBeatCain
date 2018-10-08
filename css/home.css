@@ -1,7 +1,10 @@
-#africa{
-   margin:auto;
-   margin-top : 10vh;
-   width: 80vw;
+main{
+    height: 76vh;
+}
+#africa img{
+    width: 80vw;
+    margin: 3vh 10vw;
+    
 }
 /* gallery */
 .slide{
@@ -30,8 +33,6 @@ h5{
     text-align: center;
     top:0;
     width: 100%;
-    /* width: 20vw;
-    height: 14vw; */
     
 }
 .slidecontent{

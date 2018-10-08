@@ -66,12 +66,13 @@ section{
     display: none;
 }
 .addsong{
-    background: green;
+    background: rgb(21, 105, 21);
     border-radius:50%;
+    box-shadow: -5px -5px 25px 0px rgb(3, 31, 7) inset;
     font-size: 3em;
     position: fixed;
     top:80%; right:3%;
-    width: 9vh;height: 9vh;
+    width: 5vh;height: 5vh;
     z-index: 100;
 }
 .addsong img{
@@ -81,7 +82,9 @@ section{
 }
 .details{
     display: block;
-    height: 46vh;
+    margin-top:45vh;
+    
+    height: 50vh;
 }
 .listag{
     display: flex;

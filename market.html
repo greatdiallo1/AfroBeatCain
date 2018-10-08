@@ -6,104 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AfroBeatCain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newstyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/market.css" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 </head>
+<body class="degrade market">
+    <nav class="topnavig menus" role="navigation">
+        <div class="quitsearch hidden"><i class="far fa-times-circle"></i></div>
+        <div class="logo"></div>
+    </nav>
 
-<body>
-    <nav class="navbar is-fixed-top is-black menu" role="navigation">
-        <div class="navbar-brand">
-            <div class="navbar-start">
-                <input id="inputsearch" font-color="red" type="text">
+    <nav class="bottomnavig menus" >
+        <a href="home.html">
+            <img src="img/h.svg" alt="Home">
+        </a>
+        <hr class="hr">
+        <a href="library.html">
+            <img src="img/mus.svg" alt="Library">
+        </a>
+        <hr class="hrbiss hr">
+        <a href="profil.html">
+            <img src="img/profil1.jpg" id='profil'>
+        </a>
+        <hr class="hrbiss hr">
+        <a href="market.html">
+            <img src="img/s2.svg" alt="Market">
+        </a>
+        <hr class="hr">
+        <a href="setting.html">
+            <img src="img/set.svg" alt="Settings">
+        </a>
+    </nav>
+    <main>
+        <section class="panier">
+            <h1>Selected Beats</h1>
+            <div>
+                <img src="./img/songMarket1.jpg" alt="Artist">
+                <div class="details">
+                    <h2><strong>Wizzkid :</strong> PRIX : 40$</h2>
+                    <h3>
+                        <strong>Come Closer</strong>
+                        </br>3:36s</br>Lorem Ipsum
+                    </h3>
+                </div>
+                <button>Supprimer</button>
+                <hr>
             </div>
-        </div>
-    </nav>
-    <a href="javascript:history.back()"><i style="color:#ff8800;width:30vw;position:absolute;left:40vw;top:80vh;">Retour</i></a>
 
-    <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a href="home.html">
-                <img src="img/h.svg" alt="Home">
-            </a>
-            <hr>
-            <a href="library.html">
-                <img src="img/mus.svg" alt="Library">
-            </a>
-            <hr class="hrbiss">
-            <a href="profil.html">
-                <img src="img/profil1.jpg" id='profil'>
-            </a>
-            <hr class="hrbiss">
-            <a href="market.html">
-                <img src="img/s2.svg" alt="Market">
-            </a>
-            <hr>
-            <a href="setting.html">
-                <img src="img/set.svg" alt="Settings">
-            </a>
-        </div>
-    </nav>
-    
+            <div class="song2">
+
+                <img src="./img/songMarket3.jpg" alt="Artist">
+                <div class="details">
+                    <h2>
+                        <strong>Lil Peep :</strong> PRIX : 1200$</h2>
+                    <h3>
+                        <strong>Awfull Things</strong>
+                        </br>3:33s</br>Lorem Ipsum</h3>
+                </div>
+                <button>Supprimer</button>
+                <hr>
+            </div>
+
+            <p>TOTAL : 1240$</p>
+            <button onclick="window.location='market.1.html'">Suivant</button>
+
+        </section>
+    </main>
 
 
 
-    <section id="search">
-        <h5>Beats</h5>
-        <ul>
-            <li>
-                <img src="img/cover3.png" class="musique">
-                <div>
-                    <p class="musique">Beat or not to beat</p>
-                    <p class="maker descri">Beatmaker64</p>
-                </div>
-            </li>
-            <li>
-                <img src="img/cover6.jpeg" class="musique">
-                <div>
-                    <p class="musique">Mega beat</p>
-                    <p class="maker descri">Beatmaker64</p>
-                </div>
-            </li>
-            <li>
-                <img src="img/cover5.jpeg" class="musique">
-                <div>
-                    <p class="musique">Un son ou un beat?</p>
-                    <p class="maker descri">Beast maker</p>
-                </div>
-            </li>
-            <li>
-                <img src="img/cover4.jpg" class="musique">
-                <div>
-                    <p class="musique">Un beat en sucre</p>
-                    <p class="maker descri">The beatmaker</p>
-                </div>
-            </li>
-        </ul>
-        <h5>Beatmakers</h5>
-        <ul>
-            <li>
-                <img src="img/dj.svg" class="maker">
-                <p class="maker ">Beatmaker64</p>
-            </li>
-            <li>
-                <img src="img/profil2.jpg" class="maker">
-                <p class="maker">The beatmaker</p>
-            </li>
-            <li>
-                <img src="img/profil1.jpg" class="maker">
-                <p class="maker">Beast maker</p>
-            </li>
-        </ul>
-        <h5>Tags</h5>
-        <ul>
-            <li class="tags">Guitare</li>
-            <li class="tags">Cote d'Ivoire</li>
-            <li class="tags">Afrique du Sud</li>
-            <li class="tags">Coupé décalé</li>
-        </ul>
-    </section>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

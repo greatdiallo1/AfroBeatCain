@@ -6,61 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AfroBeatCain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newstyles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/parametre.css" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="contenaire">
-        <div id="back">
-            <a href="javascript:history.back()">
-                <i class="fas fa-chevron-left" style="color:#ff8800;"></i>
-            </a>
-        </div>
-        <div class="compte">Compte
-            <i class="fas fa-chevron-right" id="next"></i>
-        </div>
-        <div class="langue">Langue
-            <i class="fas fa-chevron-right" id="langue"></i>
-        </div>
-        <div class="propos">A propos
-            <i class="fas fa-chevron-right" id="propos"></i>
-        </div>
-        <div class="condition">Conditions d'utilisation
-            <i class="fas fa-chevron-right" id="condition"></i>
-        </div>
-
-    </div>
-    <div>
-        <a id="connect" class="button is-info is-outlined is is-rounded">Déconnexion</a>
-    </div>
-    <nav class="navbar is-fixed-bottom menu" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a href="home.html">
-                <img src="img/h.svg" alt="Home">
-            </a>
-            <hr>
-            <a href="library.html">
-                <img src="img/mus.svg" alt="Library">
-            </a>
-            <hr class="hrbiss">
-            <a href="profil.html">
-                <img src="img/profil1.jpg" id='profil'>
-            </a>
-            <hr class="hrbiss">
-            <a href="market.html">
-                <img src="img/s.svg" alt="Market">
-            </a>
-            <hr>
-            <a href="setting.html">
-                <img src="img/set2.svg" alt="Settings">
-            </a>
-        </div>
+    <nav class="topnavig menus" role="navigation">
+        <div class="quitsearch hidden"><i class="far fa-times-circle"></i></div>
+        <div class="logo"></div>
     </nav>
+
+    <nav class="bottomnavig menus" >
+        <a href="home.html"><img src="img/h.svg" alt="Home"></a>
+        <hr class="hr">
+        <a href="library.html"><img src="img/mus.svg" alt="Library"></a>
+        <hr class="hrbiss hr">
+        <a href="profil.html"><img src="img/profil1.jpg" id='profil'></a>
+        <hr class="hrbiss hr">
+        <a href="market.html"><img src="img/s.svg" alt="Market"></a>
+        <hr class="hr">
+        <a href="setting.html"><img src="img/set2.svg" alt="Settings"></a>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Paramètres</h1>
+            <hr>
+            <h3>Mon Compte</h3><br>
+            <div><img src="img/user.svg"><p>Déconnexion</p></div>
+            <div><img src="img/historique.png"><p>Historique des achats</p></div>
+            <h3>Style : </h3>
+            <div class="colorstyle">
+                <p>Sombre</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Clair</p>
+            </div>      
+            <hr>
+            <div>
+                <p>Langues :</p>
+                <select id="mselect">
+                    <option value="langue1">Français</option>
+                    <option value="langue1">Anglais</option>
+                </select>
+            </div>
+            <hr>
+            <div>Licences :</div>
+            <hr>
+            <div>Conditions légales</div>
+            <div>Conditions ventes</div>
+            <hr>
+            <div>Version d'Afrobeat : 1.0.1</div>
+        </section>
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
