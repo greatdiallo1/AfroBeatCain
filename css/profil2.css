@@ -1,9 +1,27 @@
+body{
+    overflow: hidden;
+}
+main{
+    margin-top:45vh;
+    height: 47vh;
+    overflow: scroll;
+}
+
+.menus{
+    position: fixed;
+    z-index: 100000;
+    bottom:0;
+}
+#accordeon{
+    margin-top:-41vh;
+}
 .profil{
     background: linear-gradient(-45deg, rgba(0,0,0,1) 20%, rgb(23, 0, 36) 50%, rgba(0,0,0,1) 80%); /* FF3.6-15 */
     margin-top: -45vh;
     padding-top:20px;
     position: fixed;
-    height: 45vh; width: 100%;
+    height: 43vh; width: 100%;
+    text-align: center;
     z-index: 1000;
 }
 #profilpic{
@@ -81,10 +99,9 @@ section{
     width: 50%;height: 50%;
 }
 .details{
-    display: block;
-    margin-top:45vh;
-    
-    height: 50vh;
+    display: block;    
+    height: 45vh;
+    overflow: hidden;
 }
 .listag{
     display: flex;
