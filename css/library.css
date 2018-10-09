@@ -175,7 +175,7 @@ ul{
     width: 97vw;
     margin-left: 1.5vw;
     background-color: rgb(31, 30, 30);
-    box-shadow: 0px -15px 50px -20px rgb(150, 8, 8) inset;
+    box-shadow: 0px -15px 50px -20px rgb(0, 0, 0) inset;
 }
 .more {
     height: 3vh;
